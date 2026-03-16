@@ -9,7 +9,7 @@ def print_market(markets_list):
     for i, market in enumerate(markets_list[:10]):
         yes = getattr(market, "yes", None)
         print(i, market.title)
-        print("  candidate:", yes.label if yes else None)
+        print("  candidate:", yes.label)
         print("  market_id:", getattr(market, "market_id", None))
         print("  price:", yes.price if yes else None)
         print("  type:", type(market))
